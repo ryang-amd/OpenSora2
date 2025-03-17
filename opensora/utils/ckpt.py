@@ -16,7 +16,7 @@ from colossalai.utils.safetensors import save as async_save
 from colossalai.zero.low_level import LowLevelZeroOptimizer
 from huggingface_hub import hf_hub_download
 from safetensors.torch import load_file
-from tensornvme.async_file_io import AsyncFileWriter
+# from tensornvme.async_file_io import AsyncFileWriter
 from torch.optim import Optimizer
 from torch.optim.lr_scheduler import _LRScheduler
 
