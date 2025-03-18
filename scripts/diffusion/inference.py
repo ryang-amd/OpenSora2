@@ -111,7 +111,8 @@ def main():
     num_sample = cfg.get("num_sample", 1)
 
     type_name = "image" if cfg.sampling_option.num_frames == 1 else "video"
-    sub_dir = f"{type_name}_{cfg.sampling_option.resolution}"
+    sub_dir = cfg.get("sub_dir", f"{type_name}_{cfg.sampling_option.resolution}")
+    # sub_dir = f"{type_name}_{cfg.sampling_option.resolution}"
     os.makedirs(os.path.join(save_dir, sub_dir), exist_ok=True)
     use_t2i2v = cfg.get("use_t2i2v", False)
     img_sub_dir = os.path.join(sub_dir, "generated_condition")

@@ -1,4 +1,5 @@
 save_dir = "samples"  # save directory
+sub_dir = "twocats"
 seed = 42  # random seed (except seed for z)
 batch_size = 1
 dtype = "bf16"
